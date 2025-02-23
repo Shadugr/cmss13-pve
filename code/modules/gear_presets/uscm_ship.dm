@@ -661,7 +661,7 @@
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
 	assignment = JOB_SO
 	rank = JOB_SO
-	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_MO4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltCo"
 	minimum_age = 25
 	skills = /datum/skills/SO
@@ -683,7 +683,7 @@
 
 /datum/equipment_preset/uscm_ship/so/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_MO3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm_ship/so/handle_late_join(mob/living/carbon/human/new_human, late_join)
 	if(late_join)
