@@ -76,7 +76,7 @@
 	else if(selected_vehicle == "ARC")
 		display_list = GLOB.cm_vending_vehicle_crew_arc
 
-	else if(selected_vehicle == "TANK")
+	else if(selected_vehicle == "APC")
 		if(available_categories)
 			display_list = GLOB.cm_vending_vehicle_crew_apc
 		else //APC stuff costs more to prevent 4000 points spent on shitton of ammunition
@@ -124,6 +124,15 @@
 	var/turf/T = get_turf(src)
 	T = get_step(T, SOUTH)
 	return T
+
+/obj/structure/machinery/cm_vending/gear/vehicle_crew/tank_preset
+	selected_vehicle = "TANK"
+
+/obj/structure/machinery/cm_vending/gear/vehicle_crew/arc_preset
+	selected_vehicle = "ARC"
+
+/obj/structure/machinery/cm_vending/gear/vehicle_crew/apc_preset
+	selected_vehicle = "APC"
 
 GLOBAL_LIST_INIT(cm_vending_vehicle_crew_tank, list(
 	list("STARTING KIT SELECTION:", 0, null, null, null),

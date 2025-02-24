@@ -202,7 +202,7 @@
 
 //multitile vehicle skills
 
-#define SKILL_VEHICLE_DEFAULT 3
+#define SKILL_VEHICLE_DEFAULT 1
 //Can't drive
 #define SKILL_VEHICLE_UNTRAINED 0
 //Can drive small vehicles (truck)

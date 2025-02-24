@@ -17,6 +17,8 @@
 
 	role_mappings = list(
 		/datum/job/command/bridge/ai = JOB_SO,
+		/datum/job/command/pilot/cas_pilot/ai = JOB_CAS_PILOT,
+		/datum/job/command/tank_crew/ai = JOB_TANK_CREW,
 		/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,
 		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,
 		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
@@ -81,6 +83,8 @@
 	return
 
 GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/job/command/bridge/ai = JOB_SO,\
+		/datum/job/command/pilot/cas_pilot/ai = JOB_CAS_PILOT,\
+		/datum/job/command/tank_crew/ai = JOB_TANK_CREW,\
 		/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,\
 		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,\
 		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
