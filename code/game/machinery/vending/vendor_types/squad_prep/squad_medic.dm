@@ -207,13 +207,12 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 /obj/effect/essentials_set/medic
 	spawned_gear_list = list(
 		/obj/item/storage/firstaid/adv,
-		/obj/item/storage/firstaid/adv,
+		/obj/item/storage/surgical_tray,
 		/obj/item/device/healthanalyzer,
 		/obj/item/roller/medevac,
 		/obj/item/roller,
 		/obj/item/tool/surgery/surgical_line,
 		/obj/item/tool/surgery/synthgraft,
-		/obj/item/storage/surgical_case/regular,
 		/obj/item/reagent_container/blood/OMinus,
 		/obj/item/reagent_container/blood/OMinus,
 		/obj/item/device/flashlight/pen,
