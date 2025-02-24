@@ -545,6 +545,8 @@
 		if(JOB_SQUAD_MEDIC)
 			assignment = JOB_SQUAD_MEDIC
 			num_medics++
+			var/squad_number = (num_medics > 2) ? pick(1, 2) : num_medics
+			assign_fireteam("SQ[squad_number]", M)
 			C.claimedgear = FALSE
 		if(JOB_SQUAD_SPECIALIST)
 			assignment = JOB_SQUAD_SPECIALIST
