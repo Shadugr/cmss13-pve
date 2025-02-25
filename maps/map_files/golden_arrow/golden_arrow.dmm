@@ -7810,7 +7810,7 @@
 /area/golden_arrow/prep_hallway)
 "aAQ" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
-	req_one_access_txt = "8;12;39;40;22;27"s";
+	req_one_access_txt = "8;12;39;40;22;27";
 	req_one_access = list()
 	},
 /turf/open/floor/almayer,
@@ -12339,8 +12339,9 @@
 /obj/structure/machinery/door/airlock/almayer/secure{
 	dir = 1;
 	id = "briefingdoor";
-	req_access = null;
-	name = "\improper Assembly Room"
+	req_access = list();
+	name = "\improper Armored vehicle depot";
+	req_one_access_txt = "19;27"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
@@ -15124,6 +15125,15 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
+"bDZ" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1;
+	id = "briefingdoor";
+	req_access = null;
+	name = "\improper Assembly Room"
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "bEj" = (
 /obj/structure/sign/safety/bulkhead_door{
 	pixel_y = -29
@@ -33054,7 +33064,7 @@ ayX
 ayX
 ayX
 ayX
-adz
+bDZ
 axS
 axS
 axS
