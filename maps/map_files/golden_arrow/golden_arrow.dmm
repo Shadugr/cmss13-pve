@@ -16570,6 +16570,8 @@
 /obj/structure/largecrate/supply/ammo/m41a{
 	pixel_y = 0
 	},
+/obj/item/ammo_box/magazine/m39,
+/obj/item/ammo_box/magazine/m39,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "gUY" = (
@@ -20658,6 +20660,8 @@
 /obj/structure/largecrate/supply/ammo/m41a{
 	pixel_y = 0
 	},
+/obj/item/ammo_box/magazine/m49a,
+/obj/item/ammo_box/magazine/m49a,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "vPN" = (

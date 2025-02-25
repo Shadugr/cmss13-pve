@@ -213,6 +213,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		/obj/item/roller,
 		/obj/item/tool/surgery/surgical_line,
 		/obj/item/tool/surgery/synthgraft,
+		/obj/item/device/defibrillator,
 		/obj/item/reagent_container/blood/OMinus,
 		/obj/item/reagent_container/blood/OMinus,
 		/obj/item/device/flashlight/pen,
