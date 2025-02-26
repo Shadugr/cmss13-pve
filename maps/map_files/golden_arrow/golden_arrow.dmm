@@ -3358,6 +3358,14 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
+/obj/item/notepad/black{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/item/tool/pen{
+	pixel_x = 9;
+	pixel_y = -2
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoon_commander_rooms)
 "ama" = (
@@ -5499,14 +5507,12 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/supply)
 "atv" = (
-/obj/structure/machinery/iv_drip{
-	pixel_y = 6
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/pilot_officer{
+	req_access = list(22);
+	vendor_role = list()
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/sterile_green_side,
-/area/golden_arrow/medical)
+/turf/open/floor/plating,
+/area/golden_arrow/hangar)
 "atw" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
@@ -6050,6 +6056,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/item/stack/sheet/metal/medium_stack,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "avJ" = (
@@ -6817,10 +6824,10 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
 "ayf" = (
-/obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/bioprinter,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "ayi" = (
@@ -12791,17 +12798,11 @@
 /obj/structure/machinery/light/small/blue{
 	pixel_y = -1
 	},
-/obj/item/storage/box/nade_box{
-	pixel_y = 15;
-	layer = 3.2;
-	pixel_x = -4
-	},
-/obj/item/storage/box/guncase/heavy/fuel{
-	pixel_y = 14
-	},
-/obj/item/storage/box/guncase/heavy/motiondetectors{
-	pixel_y = 2;
-	pixel_x = -3
+/obj/structure/largecrate/supply/explosives/mortar_he,
+/obj/structure/closet/crate/secure/mortar_ammo/mortar_kit{
+	pixel_y = 14;
+	req_one_access = list();
+	req_one_access_txt = "8;12;39;40;22;27"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
@@ -15750,6 +15751,18 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/supply)
+"dUY" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	name = "\improper Equipment Locker";
+	id = "squadarmory"
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff";
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "dVU" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -16873,6 +16886,14 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/hangar)
+"hSS" = (
+/obj/structure/machinery/cm_vending/gear/tl{
+	req_access = list();
+	req_one_access_txt = "8;12;39;40;22;27";
+	vendor_role = list()
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "hSW" = (
 /obj/effect/landmark/start/marine/leader/alpha,
 /obj/effect/landmark/late_join/alpha,
@@ -17472,6 +17493,18 @@
 	},
 /obj/item/storage/box/guncase/heavy/sentry,
 /obj/structure/machinery/power/apc/almayer/east,
+/obj/item/storage/box/nade_box{
+	pixel_y = 15;
+	layer = 3.2;
+	pixel_x = -4
+	},
+/obj/item/storage/box/guncase/heavy/motiondetectors{
+	pixel_y = 2;
+	pixel_x = -3
+	},
+/obj/item/storage/box/guncase/heavy/fuel{
+	pixel_y = 14
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "kDp" = (
@@ -18446,22 +18479,6 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
 "nsl" = (
-/obj/structure/closet/crate/trashcart{
-	pixel_y = 11
-	},
-/obj/item/prop/colony/usedbandage,
-/obj/item/prop/colony/usedbandage{
-	dir = 4
-	},
-/obj/item/prop/colony/usedbandage{
-	dir = 6;
-	pixel_y = 6
-	},
-/obj/item/prop/colony/usedbandage{
-	dir = 10;
-	pixel_y = 13
-	},
-/obj/item/storage/pill_bottle,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -18470,6 +18487,9 @@
 	light_color = "#dae2ff";
 	light_power = 0.5;
 	pixel_y = 10
+	},
+/obj/structure/machinery/iv_drip{
+	pixel_y = 6
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
@@ -19338,6 +19358,13 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
+"qta" = (
+/obj/structure/machinery/cm_vending/clothing/pilot_officer{
+	req_access = list(22);
+	vendor_role = list()
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/hangar)
 "qwH" = (
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
@@ -20060,6 +20087,13 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
+"tpr" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	name = "\improper Equipment Locker";
+	id = "squadarmory"
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "tsK" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -28364,7 +28398,7 @@ aPt
 aIw
 avI
 ayf
-atv
+rAj
 aBv
 akT
 aaI
@@ -31897,7 +31931,7 @@ aTD
 adz
 adz
 adz
-adz
+hSS
 akb
 akb
 akb
@@ -32437,7 +32471,7 @@ vRh
 vRh
 ajI
 adz
-ayX
+adz
 adz
 axV
 vRh
@@ -32613,8 +32647,8 @@ akZ
 aoA
 vRh
 acR
-adz
-ayX
+dUY
+atv
 adz
 aza
 vRh
@@ -32790,8 +32824,8 @@ auD
 aYP
 aYP
 aYT
-adz
-ayX
+tpr
+qta
 adz
 aMV
 aYP

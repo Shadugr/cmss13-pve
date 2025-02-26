@@ -110,7 +110,6 @@
 	LAZYADD(traits_to_give, list(
 		BULLET_TRAIT_ENTRY_ID("iff", /datum/element/bullet_trait_iff)
 	))
-	AddComponent(/datum/component/iff_fire_prevention)
 
 /obj/item/weapon/gun/smartgun/get_examine_text(mob/user)
 	. = ..()

@@ -675,7 +675,7 @@
 
 /datum/equipment_preset/uscm_ship/so/load_status(mob/living/carbon/human/new_human, client/mob_client)
 	. = ..()
-	new_human.nutrition = NUTRITION_VERYLOW
+	new_human.nutrition = NUTRITION_NORMAL
 	if(!new_human.client)
 		return
 
@@ -922,6 +922,9 @@
 	skills = /datum/skills/pilot
 
 	minimap_icon = "pilot"
+
+/datum/equipment_preset/uscm_ship/gp/load_status(mob/living/carbon/human/new_human)
+	new_human.nutrition = NUTRITION_LOW
 
 /datum/equipment_preset/uscm_ship/gp/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"

@@ -183,22 +183,6 @@
 /turf/open/floor/almayer/sterile_green_corner/east,
 /area/golden_arrow/medical)
 "rL" = (
-/obj/structure/closet/crate/trashcart{
-	pixel_y = 11
-	},
-/obj/item/prop/colony/usedbandage,
-/obj/item/prop/colony/usedbandage{
-	dir = 4
-	},
-/obj/item/prop/colony/usedbandage{
-	dir = 6;
-	pixel_y = 6
-	},
-/obj/item/prop/colony/usedbandage{
-	dir = 10;
-	pixel_y = 13
-	},
-/obj/item/storage/pill_bottle,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -207,6 +191,9 @@
 	light_color = "#dae2ff";
 	light_power = 0.5;
 	pixel_y = 10
+	},
+/obj/structure/machinery/iv_drip{
+	pixel_y = 6
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
@@ -442,10 +429,10 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "II" = (
-/obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/bioprinter,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "KR" = (
@@ -454,7 +441,10 @@
 	light_color = "#dae2ff";
 	light_power = 0.7
 	},
-/obj/structure/machinery/chem_dispenser/medbay,
+/obj/structure/machinery/cm_vending/sorted/medical{
+	pixel_y = 1;
+	density = 0
+	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "Ll" = (
@@ -472,6 +462,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/item/stack/sheet/metal/medium_stack,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "LQ" = (
@@ -593,13 +584,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/medical)
-"Vj" = (
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 1;
-	density = 0
-	},
-/turf/open/floor/almayer/dark_sterile,
-/area/golden_arrow/medical)
 "Vp" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable{
@@ -638,22 +622,13 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
-"XX" = (
-/obj/structure/machinery/iv_drip{
-	pixel_y = 6
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/sterile_green_side,
-/area/golden_arrow/medical)
 
 (1,1,1) = {"
 OV
 QS
 ak
 Pm
-Vj
+vX
 KR
 pb
 aP
@@ -731,7 +706,7 @@ qE
 Ig
 LE
 II
-XX
+Cj
 Sa
 eY
 aP

@@ -1022,6 +1022,9 @@
 	skills = /datum/skills/tank_crew
 	minimap_icon = "vc"
 
+/datum/equipment_preset/uscm/tank/load_status(mob/living/carbon/human/new_human)
+	new_human.nutrition = NUTRITION_LOW
+
 /datum/equipment_preset/uscm/tank/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)

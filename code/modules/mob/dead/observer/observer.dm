@@ -1213,8 +1213,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			. += "Time To Start: SOON"
 
 		. += "Players: [SSticker.totalPlayers]"
-		if(client.admin_holder)
-			. += "Players Ready: [SSticker.totalPlayersReady]"
+		. += "Players Ready: [SSticker.totalPlayersReady]"
 
 	. += ""
 

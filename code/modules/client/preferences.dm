@@ -1314,10 +1314,12 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 
 				if("plat_name")
 					var/raw_name = input(user, "Choose your Platoon's name:", "Character Preference")  as text|null
-					if(length(raw_name) > 16 || !length(raw_name)) // Check to ensure that the user entered text (rather than cancel.)
-						to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, -, ' and .</font>")
-					else
-						platoon_name = raw_name
+					if(raw_name) // Check to ensure that the user entered text (rather than cancel.)
+						var/new_name = reject_bad_name(raw_name)
+						if(new_name)
+							platoon_name = new_name
+						else
+							to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, -, ' and .</font>")
 
 				if ("dropship_camo")
 					var/new_camo = tgui_input_list(user, "Choose your platoon's dropship camo:", "Character Preferences", GLOB.dropship_camos)
@@ -1327,10 +1329,12 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 
 				if("dropship_name")
 					var/raw_name = input(user, "Choose your Platoon's Dropship name:", "Character Preference")  as text|null
-					if(length(raw_name) > 10 || !length(raw_name)) // Check to ensure that the user entered text (rather than cancel.)
-						to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, -, ' and .</font>")
-					else
-						dropship_name = raw_name
+					if(raw_name) // Check to ensure that the user entered text (rather than cancel.)
+						var/new_name = reject_bad_name(raw_name)
+						if(new_name)
+							dropship_name = new_name
+						else
+							to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, -, ' and .</font>")
 
 				if("synth_name")
 					var/raw_name = input(user, "Choose your Synthetic's name:", "Character Preference")  as text|null

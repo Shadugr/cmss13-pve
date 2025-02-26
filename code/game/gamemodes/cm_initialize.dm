@@ -79,9 +79,9 @@ Additional game mode variables.
 	/// Amount of latejoin_tally already awarded as larvas
 	var/latejoin_larva_used = 0
 	/// Multiplier to the amount of marine gear, current value as calculated with modifiers
-	var/gear_scale = 1
+	var/gear_scale = 3
 	/// Multiplier to the amount of marine gear, maximum reached value for
-	var/gear_scale_max = 1
+	var/gear_scale_max = 3
 
 	//Role Authority set up.
 	/// List of role titles to override to different roles when starting game
