@@ -58,3 +58,18 @@
 #define PASS_FLAGS_FLAME (PASS_AROUND|PASS_UNDER|PASS_MOB_THRU|PASS_THROUGH|PASS_OVER_FIRE)
 #define PASS_FLAGS_SMOKE (PASS_HIGH_OVER|PASS_AROUND|PASS_UNDER|PASS_MOB_THRU|PASS_THROUGH)
 #define PASS_FLAGS_CRAWLER (PASS_TYPE_CRAWLER|PASS_UNDER)
+
+#define MIN_GLIDE_SIZE 1
+#define MAX_GLIDE_SIZE 32
+
+GLOBAL_VAR_INIT(glide_size_multiplier, 1.0)
+
+#define DELAY_TO_GLIDE_SIZE(delay) (clamp(((world.icon_size / max((delay) / world.tick_lag, 1)) * GLOB.glide_size_multiplier), MIN_GLIDE_SIZE, MAX_GLIDE_SIZE))
+
+#define NSCOMPONENT(d) (d&(NORTH|SOUTH))
+#define EWCOMPONENT(d) (d&(EAST|WEST))
+#define NSDIRFLIP(d) (d^(NORTH|SOUTH))
+#define EWDIRFLIP(d) (d^(EAST|WEST))
+
+#define FIRST_DIAG_STEP 1
+#define SECOND_DIAG_STEP 2
