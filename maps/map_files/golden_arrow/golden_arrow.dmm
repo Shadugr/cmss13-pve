@@ -3252,7 +3252,7 @@
 	vendor_role = list()
 	},
 /turf/open/floor/almayer/plate,
-/area/golden_arrow/shared_office)
+/area/golden_arrow/platoonprep)
 "alI" = (
 /obj/structure/surface/table/almayer,
 /obj/item/weapon/straight_razor{
@@ -4664,12 +4664,11 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aqz" = (
-/obj/structure/machinery/cm_vending/clothing/marine{
-	req_one_access_txt = "8;12;39;40;22;27";
-	vendor_role = list()
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/platoonarmory)
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/platoonprep)
 "aqA" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -17961,7 +17960,7 @@
 	vendor_role = list()
 	},
 /turf/open/floor/almayer/plate,
-/area/golden_arrow/shared_office)
+/area/golden_arrow/platoonprep)
 "miP" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
@@ -18241,7 +18240,7 @@
 	vendor_role = list()
 	},
 /turf/open/floor/almayer/plate,
-/area/golden_arrow/shared_office)
+/area/golden_arrow/platoonprep)
 "mLo" = (
 /obj/structure/sign/safety/two{
 	pixel_y = -24;
@@ -31388,7 +31387,7 @@ aIb
 aNS
 aPs
 aHZ
-aqz
+alG
 alG
 mKY
 miB
@@ -31566,8 +31565,8 @@ aOt
 aBa
 aHZ
 aHZ
-arP
-ahj
+aDQ
+aqz
 ahj
 ado
 apM
@@ -31743,8 +31742,8 @@ aJX
 aqk
 aGY
 uwt
-arP
-arP
+aDQ
+aDQ
 arP
 aBR
 aVI
@@ -31920,8 +31919,8 @@ arh
 aRQ
 aGY
 aSr
-arP
-arP
+aDQ
+aDQ
 arP
 arP
 arP
