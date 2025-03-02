@@ -129,12 +129,6 @@
 "lY" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/briefing)
-"mm" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/briefing)
 "mG" = (
 /turf/template_noop,
 /area/template_noop)
@@ -272,15 +266,6 @@
 	layer = 2.52
 	},
 /turf/open/floor/almayer/plate,
-/area/golden_arrow/briefing)
-"rk" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
 "rn" = (
 /turf/open/floor/plating/plating_catwalk,
@@ -420,6 +405,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
 "Ef" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	pixel_y = 3
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
@@ -900,8 +889,8 @@ Ma
 Ef
 Kk
 uN
-mm
-mm
+lH
+lH
 NS
 "}
 (10,1,1) = {"
@@ -912,10 +901,10 @@ mG
 Ma
 Ma
 pI
-mm
+lH
 hz
-mm
-rk
+lH
+Kk
 NS
 "}
 (11,1,1) = {"
@@ -928,7 +917,7 @@ Ma
 Kk
 Kk
 hz
-mm
+lH
 Kk
 NS
 "}
@@ -939,11 +928,11 @@ mG
 mG
 Ma
 Ma
-mm
+lH
 lH
 hz
 Kk
-mm
+lH
 NS
 "}
 (13,1,1) = {"

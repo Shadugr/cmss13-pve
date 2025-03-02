@@ -15,6 +15,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
 "bq" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	pixel_y = 3
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
@@ -138,6 +142,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
 "fB" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	pixel_y = 3
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
@@ -612,6 +620,10 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
 "LT" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	pixel_y = 3
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
@@ -726,16 +738,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
-"PZ" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/item/tool/mop{
-	pixel_x = -1;
-	pixel_y = 20
-	},
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/briefing)
 "Qd" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/CICmap{
@@ -761,6 +763,10 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/briefing)
 "RC" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	pixel_y = 3
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
@@ -770,9 +776,6 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
-	},
-/obj/structure/janitorialcart{
-	pixel_y = 8
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
@@ -1019,7 +1022,7 @@ Uk
 Uk
 Nt
 Nt
-PZ
+bq
 bq
 xk
 LT
